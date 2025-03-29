@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoWebNinja</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+</head>
+<body class="bg-gray-200">
+    <!-- Navbar -->
+    <nav class="border-gray-200 bg-[#212b36] top-0 w-full z-50 fixed">
+        <div class="flex flex-wrap items-center justify-between mx-auto py-4 px-6 md:px-16 lg:px-10 xl:px-8 ">
+            <!-- Logo -->
+            <a href="/" class="w-12 md:w-16 lg:w-20 flex gap-2 items-center">
+                <img src="./img/logo.png" alt="Logo">
+                <p class="text-white font-semibold text-lg">EcoWebNinja</p>
+            </a>
+    
+            <!-- Toggle Button (for mobile) -->
+            <input type="checkbox" id="menu-toggle" class="hidden peer">
+            <label for="menu-toggle" class="cursor-pointer md:hidden">
+                <i class="fa-solid fa-bars text-3xl text-white duration-500 hover:text-red-500"></i>
+            </label>            
+    
+            <!-- Navbar Items -->
+            <div class="hidden w-full peer-checked:flex flex-col md:flex md:flex-row md:items-center md:w-auto bg-white md:bg-transparent">
+                <ul class="font-medium flex flex-col py-4 md:p-0 mt-4  md:flex-row md:space-x-8 md:mt-0 md:border-0 text-xl">
+                    <li>
+                        <a href="#booking_request" class="text-[#8E9BA7] duration-500 hover:text-white">
+                            <div class="flex items-center gap-2">
+                                <img src="./img/Ebene_1.png" class="w-3 h-3" alt="">
+                                <p class="text-lg hover:font-bold">Home</p>
+                            </div>
+                        <p class="text-xs pl-5">Introduction all about the EcoWebNinja</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#booking_request" class="text-[#8E9BA7] duration-500 hover:text-white">
+                            <div class="flex items-center gap-2">
+                                <img src="./img/Ebene_1.png" class="w-3 h-3" alt="">
+                                <p class="text-lg hover:font-bold">Projects</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#booking_request" class="text-[#8E9BA7] duration-500 hover:text-white">
+                            <div class="flex items-center gap-2">
+                                <img src="./img/Ebene_3.png" class="w-3 h-3" alt="">
+                                <p class="text-lg hover:font-bold">Home</p>
+                            </div>
+                        <p class="text-xs pl-5">Introduction all about the EcoWebNinja</p>
+                        </a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <!-- Banner -->
+     <div class="">
+        <div class="min-h-[600px] sm:min-h-[700px] md:min-h-[500px] lg:min-h-[500px] bg-gradient-to-r from-[#614cfa] to-[#69fcc0]">
+            <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-16 mt-16 min-h-[600px] sm:min-h-[700px] md:min-h-[500px] lg:min-h-[500px]" style="background: 
+            url('./img/Banner/StockCake-Samurai%20Amid%20Blossoms_1738839379%201.png');
+            background-size: cover; background-position: center;">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
+                    <div class="md:col-span-1 lg:col-span-3">
+                        <h2 class="text-white font-bold pb-4">Manage Your Profile with Ease</h2>
+                        <hr class="border w-40">
+                    </div>
+                    <div class="md:col-span-1 lg:col-span-2">
+                        <div class="flex flex-wrap gap-3 justify-center md:justify-end">
+                            <button class="bg-[#624BFF] text-white flex gap-3 text-md items-center px-4 py-2 lg:px-4 lg:py-3 rounded-md shadow-lg">
+                                <img src="./img/Banner/Ebene_3.png" alt="" class="w-6">Login
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
+                    <div class="md:col-span-1 lg:col-span-3">
+                        <h1 class="py-4 font-bold text-white text-3xl lg:text-5xl xl:text-5xl">"Unleash the EcoWeb Ninja – <br>
+                            Power Up Your Website Journey!"</h1>
+                        <h2 class="font-bold text-white">After the download, the EcoWeb Ninja takes action – optimizing your website for a more accessible and sustainable future.</h2>
+                    </div>
+                    <div class="md:col-span-1 lg:col-span-2">
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+     </div>
+
+    <!-- The Ninja breaks digital barriers with WCAG 2.2 compliance!  -->
+    <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-6 relative">
+        <div class="bg-white p-10 rounded-md shadow-md border-b-8 border-b-[#6BFFC0] px-5 pb-20 relative">
+            <div class="text-center">
+                <h2 class="text-3xl font-semibold pb-5 text-[#624BFF]">The Ninja breaks digital barriers with WCAG 2.2 compliance!</h2>
+                <hr class="w-56 border border-[#624BFF] mx-auto">
+                <p class="py-5 text-lg">The Web Content Accessibility Guidelines (WCAG) 2.2 help ensure websites are accessible for all users, including people with disabilities. The Ninja checks your website for contrast issues, missing ARIA attributes, keyboard accessibility, focus order problems, and incorrect heading structures – key elements required by the EU for equal access to digital content.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 py-8 px-4 lg:px-6">
+                <div class="relative mt-20">
+                    <button class="bg-[#6BFFC0] w-32 h-32 rounded-full flex items-center justify-center absolute -top-20 left-1/2 transform -translate-x-1/2">
+                        <img src="./img/Group 108.svg" alt="">
+                      </button>
+                      
+                    <div class="border-b-8 border-b-[#6BFFC0] rounded-3xl">
+                        <div class="bg-gray-100 rounded-3xl border border-gray-400 shadow-lg text-center pt-16">
+                            <p class="text-lg">Contrast</p>
+                            <p class="text-xs py-3">Checks text contrast <br> against background</p>
+                            <div class="px-6">
+                                <hr class="border-1 border-gray-500">
+                            </div>
+                            <div class="flex justify-center gap-2 py-5">
+                                <img src="./img/passed.png" class="w-20 h-20" alt="">
+                                <img src="./img/failed.png" class="w-20 h-20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative mt-20">
+                    <button class="bg-[#6BFFC0] w-32 h-32 rounded-full flex items-center justify-center absolute -top-20 left-1/2 transform -translate-x-1/2">
+                        <img src="./img/Group 109.svg" alt="">
+                      </button>
+                      
+                    <div class="border-b-8 border-b-[#6BFFC0] rounded-3xl">
+                        <div class="bg-gray-100 rounded-3xl border border-gray-400 shadow-lg text-center pt-16">
+                            <p class="text-lg">Info and Relationships</p>
+                            <p class="text-xs py-3">Ensures proper ARIA attributes like aria-labelledby and aria-describedby</p>
+                            <div class="px-6">
+                                <hr class="border-1 border-gray-500">
+                            </div>
+                            <div class="flex justify-center gap-2 py-5">
+                                <img src="./img/passed.png" class="w-20 h-20" alt="">
+                                <img src="./img/failed.png" class="w-20 h-20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative mt-20">
+                    <button class="bg-[#6BFFC0] w-32 h-32 rounded-full flex items-center justify-center absolute -top-20 left-1/2 transform -translate-x-1/2">
+                        <img src="./img/Group 106.svg" alt="">
+                      </button>
+                      
+                    <div class="border-b-8 border-b-[#6BFFC0] rounded-3xl">
+                        <div class="bg-gray-100 rounded-3xl border border-gray-400 shadow-lg text-center pt-16">
+                            <p class="text-lg">Keyboard Accessibility</p>
+                            <p class="text-xs py-3">Ensures interactive elements can be reached via keyboard</p>
+                            <div class="px-6">
+                                <hr class="border-1 border-gray-500">
+                            </div>
+                            <div class="flex justify-center gap-2 py-5">
+                                <img src="./img/passed.png" class="w-20 h-20" alt="">
+                                <img src="./img/failed.png" class="w-20 h-20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative mt-20">
+                    <button class="bg-[#6BFFC0] w-32 h-32 rounded-full flex items-center justify-center absolute -top-20 left-1/2 transform -translate-x-1/2">
+                        <img src="./img/Group 105.svg" alt="">
+                      </button>
+                      
+                    <div class="border-b-8 border-b-[#6BFFC0] rounded-3xl">
+                        <div class="bg-gray-100 rounded-3xl border border-gray-400 shadow-lg text-center pt-16">
+                            <p class="text-lg">Focus Order</p>
+                            <p class="text-xs py-3">Detects improper <br> tabindex usage</p>
+                            <div class="px-6">
+                                <hr class="border-1 border-gray-500">
+                            </div>
+                            <div class="flex justify-center gap-2 py-5">
+                                <img src="./img/passed.png" class="w-20 h-20" alt="">
+                                <img src="./img/failed.png" class="w-20 h-20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative mt-20">
+                    <button class="bg-[#6BFFC0] w-32 h-32 rounded-full flex items-center justify-center absolute -top-20 left-1/2 transform -translate-x-1/2">
+                        <img src="./img/Group 104.svg" alt="">
+                      </button>
+                      
+                    <div class="border-b-8 border-b-[#6BFFC0] rounded-3xl">
+                        <div class="bg-gray-100 rounded-3xl border border-gray-400 shadow-lg text-center pt-16">
+                            <p class="text-lg">Heading and Labels</p>
+                            <p class="text-xs py-3">Detects improper heading structure (h1 → h2, etc.)</p>
+                            <div class="px-6">
+                                <hr class="border-1 border-gray-500">
+                            </div>
+                            <div class="flex justify-center gap-2 py-5">
+                                <img src="./img/passed.png" class="w-20 h-20" alt="">
+                                <img src="./img/failed.png" class="w-20 h-20" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-lg px-4 lg:px-6">
+                <p>Accessibility Issues</p>
+                <p><b>Total Issues Found:</b> 810</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Works -->
+        <div class="px-4 md:px-12 lg:px-12 xl:px-24 pb-8">
+            <div class="flex justify-center pb-8 pt-3">
+                <button class="bg-[#624BFF] text-white flex gap-3 text-md items-center px-4 py-3 rounded-md shadow-lg">
+                    <img src="./img/Banner/logo.png" class="w-8" alt="">Get Your Full Access Now!
+                </button>
+            </div>
+            <div class="bg-white p-5 shadow-md rounded-md">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <h2 class="text-3xl text-[#624BFF] pb-4">How does the EcoWeb Ninja work?</h2>
+                    <hr class="border border-[#624BFF] w-60">
+                    <h2 class="text-4xl font-bold text-gray-800 pt-4">Make Your Website Lighter, Faster, and Planet-Friendly</h2>
+                </div> 
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 py-12 items-center">
+                    <div class="col-span-1 lg:col-span-2">
+                        <div class="flex flex-col items-center gap-2">
+                            <h2 class="text-[#624BFF] font-bold text-lg">Enter your website URL</h2>
+                            <hr class="border border-[#624BFF] h-28 w-0">
+                        </div>
+                        <div class="flex flex-col gap-2 items-center">
+                            <h2 class="text-[#624BFF] font-bold text-lg text-center">Get your Eco Mode or Accessibility reportL</h2>
+                            <hr class="border border-[#624BFF] h-28 w-0">
+                        </div>
+                        <div class="flex flex-col gap-2 items-center">
+                            <h2 class="text-[#624BFF] font-bold text-lg">Fix the issues </h2>
+                        </div>
+                    </div>    
+                    <div class="col-span-1 lg:col-span-10">
+                      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-800">Enter your website URL</h2>
+                            <p class="text-lg pt-4">Enter a URL to analyze your website. Choose Eco Mode for efficiency or Accessibility Mode for inclusivity.</p>
+                        </div>
+                        <div>
+                            <img src="./img/Home Dashboard 2.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                       
+            </div>
+         </div>
+    
+         <!-- Accessibility  -->
+          <div class="px-4 md:px-12 lg:px-12 xl:px-24 pb-16">
+            <div class="flex justify-center">
+                <button class="bg-[#624BFF] text-white flex gap-3 text-md items-center px-4 py-3 rounded-md shadow-lg">
+                    <img src="./img/Banner/logo.png" class="w-8" alt="">Get Your Full Access Now!
+                </button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 py-10 items-center">
+                <div>
+                    <img src="./img/Accessibility Mode - URL 1.png" class="mx-auto" alt="">
+                </div>
+                <div class="col-span-1 lg:col-span-2">
+                    <h2 class="text-3xl font-bold pb-5">Accessibility First – <br> 
+                        Make Your Website Inclusive for All !</h2>
+                        <hr class="w-56 border border-black">
+                        <p class="py-5 text-lg"><b>The Barrier-Free Mode (Accessibility Compliance)</b>
+                        Unlock Every Path" (Ensure Accessibility Compliance)
+                        What it does: Fixes accessibility issues, meets EU standards, and improves usability</p>
+                        <p class="text-lg ">Ensure everyone can access your website with optimized design and performance. Improve readability, minimize barriers, and enhance usability for all users, including those with disabilities. A faster, more inclusive web starts with accessibility!</p>
+                </div>
+            </div>
+          </div>
+        
+        <!-- Eco Mode  -->
+        <div class="px-4 md:px-12 lg:px-12 xl:px-24 pb-16">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 py-10 items-center">
+                <div class="col-span-1 lg:col-span-2">
+                    <h2 class="text-3xl font-bold pb-5">Eco Mode –  <br> 
+                        Optimize Your Web, Maximize Efficiency !</h2>
+                        <hr class="w-56 border border-black">
+                        <p class="py-5 text-lg"><b>The Eco Mode (Energy Efficiency & Sustainability)</b>
+                        Enter Ninja Speed Mode" (Optimize for Sustainability & Energy Efficiency)  <br> What it does: Reduces server load, cuts CO₂ emissions, and improves SEO performance.</p>
+                        <p class="text-lg ">Make your website greener, faster, and more accessible with EcoWeb Ninja. Reduce code size, compress images and videos, fix broken links, and fine-tune your server settings. Boost performance while ensuring sustainability and seamless accessibility for all users!</p>
+                </div>
+                <div>
+                    <img src="./img/Eco Mode - URL 1.png" class="mx-auto" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Top  -->
+     <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-6 bg-gradient-to-r from-[#614cfa] to-[#69fcc0]">
+        <div class="flex items-center flex-wrap text-center justify-center gap-3 text-white">
+         <p>Invite friends, earn rewards!</p> <img src="./img/footer/Layer_1.png" alt=""> <p>Get</p> <img class="bg-yellow-600 p-1 rounded-full" src="./img/footer/Vector.png" alt=""> <p>50 free credits for every successful referral—sharing pays off!</p><button class="text-[#614cfa] px-4 py-1 rounded-md font-bold text-sm bg-white shadow-lg">Explore more</button>
+        </div>
+      </div>
+
+         <!-- Main JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
