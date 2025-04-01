@@ -239,7 +239,7 @@
 
                     <div class="pt-5 grid grid-cols-1 lg:grid-cols-3">   
                         <div class="col-span-1 lg:col-span-2">
-                            <div class="grid grid-cols-1 lg:grid-cols-3">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-2">
                                 <div class="col-span-1">
                                     <h2>Avatar</h2>
                                 </div>
@@ -249,6 +249,22 @@
                                         <button class="text-[#624BFF] border px-3 py-1 rounded-md">Change</button>
                                         <button class="text-[#624BFF] border px-3 py-1 rounded-md">Remove</button>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="grid grid-cols-1 lg:grid-cols-3 py-5 gap-2">
+                                <div class="col-span-1">
+                                    <h2>Cover photo</h2>
+                                </div>
+                                <div class="col-span-1 lg:col-span-2">
+                                    <div class="w-full border shadow-md p-5 flex flex-col items-center justify-center text-center cursor-pointer relative" onclick="document.getElementById('fileInput').click()">
+                                        <img src="./img/Union.png" alt="" class="mb-2">
+                                        <p>Drag image here, or <span class="text-[#624BFF]">Browse Files</span></p>
+                                        <input type="file" id="fileInput" class="hidden">
+                                    </div>
+                                    <button onclick="document.getElementById('fileInput').click()" 
+                                            class="text-[#624BFF] border px-3 py-1 mt-3 rounded-md">
+                                        Change
+                                    </button>
                                 </div>
                             </div>
 
