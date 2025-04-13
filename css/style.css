@@ -1,0 +1,9 @@
+.xl-only-border {
+    border-right: none;
+  }
+
+  @media (min-width: 1200px) {
+    .xl-only-border {
+      border-right: 1px solid rgba(255, 255, 255, 0.25); /* Adjust color as needed */
+    }
+  }
