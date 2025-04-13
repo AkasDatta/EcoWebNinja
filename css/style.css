@@ -1,9 +1,14 @@
+/* Navbar  */
 .xl-only-border {
     border-right: none;
   }
 
   @media (min-width: 1200px) {
     .xl-only-border {
-      border-right: 1px solid rgba(255, 255, 255, 0.25); /* Adjust color as needed */
+      border-right: 0.5px solid rgba(255, 255, 255, 0.25); /* Adjust color as needed */
     }
+  }
+
+  .custom-hover:hover {
+    color: #f8f9fa !important; /* Bootstrap's 'text-light' */
   }
