@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoWebNinja</title>
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!-- Bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
     
@@ -13,152 +16,167 @@
     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
 </head>
 <body class="bg-gray-200">
-    <!-- Navbar -->
-    <nav class="border-gray-200 bg-[#212b36] top-0 w-full z-50 fixed shadow-lg">
-        <div class="flex flex-wrap items-center justify-between mx-auto py-4 px-6 md:px-16 lg:px-10 xl:px-8">
-
-            <!-- Logo -->
-            <a href="/" class="w-12 md:w-16 lg:w-20 flex gap-2 items-center">
-                <img src="./img/logo.png" alt="Logo">
-                <p class="text-white font-semibold text-lg">EcoWebNinja</p>
-            </a>
-
-            <!-- Toggle Button (for mobile) -->
-            <input type="checkbox" id="menu-toggle" class="hidden peer">
-            <label for="menu-toggle" class="cursor-pointer xl:hidden ">
-                <i class="fa-solid fa-bars text-3xl text-white duration-500 hover:text-gray-500"></i>
-            </label>  
-
-            <!-- Navbar Items -->
-               <div class="hidden peer-checked:flex absolute top-full left-0 w-full bg-[#212b36] xl:static xl:bg-transparent flex-col xl:flex xl:flex-row xl:items-center xl:w-auto pb-8 md:pb-8 lg:pb-8 xl:pb-0">
-                <ul class="font-medium flex flex-col gap-0 md:gap-4 lg:gap-4 xl:gap-0 py-4 w-full text-xl xl:flex-row md:p-0 md:mt-0 md:border-0">
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-300">
-                            <div class="flex items-center gap-1 justify-center">
-                                <img src="./img/Layer_1 (1).png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Home</p>
-                            </div>
-                            <p class="text-xs">Introduction all <br> about EcoWebNinja</p>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-2 justify-center">
-                                <img src="./img/Ebene_1.png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Projects</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-1 justify-center">
-                                <img src="./img/Ebene_3.png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Modes</p>
-                            </div>
-                            <div class="text-xs">
-                                <p class="flex items-center gap-1 justify-center">
-                                    <img src="./img/laye (2).png" alt="">Eco Mode
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-xl fixed-top shadow-lg" style="background-color: #212b36; z-index: 1050;">
+        <div class="container-fluid px-4 px-md-5">
+    
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="/">
+            <img src="./img/logo.png" class="d-inline-block align-top" alt="Logo" style="width: 40px;">
+            <span class="text-white fw-semibold fs-5">EcoWebNinja</span>
+        </a>
+    
+        <!-- Toggle button -->
+        <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+            <i class="fa-solid fa-bars fs-2"></i>
+        </button>
+    
+        <!-- Navbar items -->
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto text-center text-xl-start mt-3 mt-xl-0">
+                <li class="nav-item px-1 d-flex align-items-start xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover" href="#">
+                        <div class="d-flex align-items-start gap-2">
+                            <img src="./img/Layer_1 (1).png" class="mt-2" style="width: 12px; height: 12px;" alt="">
+                            <div class="text-start">
+                                <div class="">
+                                    <strong>Home</strong>
+                                </div>
+                                <p class="d-block text-white-50 custom-hover text-xs">
+                                    Introduction all <br> about EcoWebNinja
                                 </p>
-                                <p class="flex items-start gap-2 justify-center">
-                                    <img src="./img/laye (1).png" alt="">Accessibility <br> Mode
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-2 justify-center">
-                                <img src="./img/Layer_1 (1).png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Documentation</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-2 justify-center">
-                                <img src="./img/Ebene_4.png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">About Us</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-2 justify-center">
-                                <img src="./img/Layer_1 (2).png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Support</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-2 justify-center">
-                                <img src="./img/Layer_1 (3).png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Credits</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="border-0 lg:border-r px-4 py-2 lg:py-0 text-center">
-                        <a href="#" class="text-gray-500 text-gray-500 hover:text-white duration-500">
-                            <div class="flex items-center gap-2 justify-center">
-                                <img src="./img/Ebene_3 (1).png" class="w-3 h-3" alt="">
-                                <p class="text-lg font-bold">Settings</p>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li class="px-4 py-2 text-center">
-                        <div class="text-gray-300">
-                            <div class="flex items-center gap-2 justify-center">
-                                <p class="text-lg font-bold">EN</p> 
-                                <p class="text-lg font-bold text-gray-500 text-gray-500 hover:text-white duration-500">| DE</p>
                             </div>
                         </div>
-                    </li>
+                    </a>
+                </li>                
+                
+                <li class="nav-item px-1 xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover hover-white" href="#">
+                    <div class="d-flex  align-items-center gap-2">
+                        <img src="./img/Ebene_1.png" class="" style="width: 12px; height: 12px;" alt="">
+                        <strong>Projects</strong>
+                    </div>
+                    </a>
+                </li>
+        
+                <li class="nav-item px-1 d-flex align-items-start xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover" href="#">
+                        <div class="d-flex align-items-start gap-2">
+                            <img src="./img/Ebene_3.png" class="mt-2" style="width: 12px; height: 12px;" alt="">
+                            <div class="text-start">
+                                <div class="">
+                                    <strong>Modes</strong>
+                                </div>
+                                <div class="d-block text-white-50 custom-hover text-xs">
+                                    <div class="d-flex  align-items-center gap-1">
+                                        <img src="./img/laye (2).png" style="width: 12px;"> Eco Mode
+                                    </div>
+                                    <div class="d-flex  align-items-start gap-1">
+                                        <img src="./img/laye (1).png" style="width: 12px;"> Accessibility <br> Mode
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>    
 
-                </ul>
-            </div>
+
+                <li class="nav-item px-1 xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover" href="#">
+                    <div class="d-flex  align-items-center gap-2">
+                        <img src="./img/Layer_1 (1).png" style="width: 12px;" alt="">
+                        <strong>Documentation</strong>
+                    </div>
+                    </a>
+                </li>
+        
+                <li class="nav-item px-1 xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover" href="#">
+                    <div class="d-flex  align-items-center gap-2">
+                        <img src="./img/Ebene_4.png" style="width: 12px;" alt="">
+                        <strong>About Us</strong>
+                    </div>
+                    </a>
+                </li>
+        
+                <li class="nav-item px-1 xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover" href="#">
+                    <div class="d-flex  align-items-center gap-2">
+                        <img src="./img/Layer_1 (2).png" style="width: 12px;" alt="">
+                        <strong>Support</strong>
+                    </div>
+                    </a>
+                </li>
+        
+                <li class="nav-item px-1 xl-only-border">
+                    <a class="nav-link text-white-50 custom-hover" href="#">
+                    <div class="d-flex  align-items-center gap-2">
+                        <img src="./img/Layer_1 (3).png" style="width: 12px;" alt="">
+                        <strong>Credits</strong>
+                    </div>
+                    </a>
+                </li>
+        
+                <li class="nav-item px-1 xl-only-border">
+                    <a class="nav-link text-white" href="#">
+                    <div class="d-flex  align-items-center gap-2">
+                        <img src="./img/Ebene_3 (1).png" style="width: 12px;" alt="">
+                        <strong>Settings</strong>
+                    </div>
+                    </a>
+                </li>
+        
+                <li class="nav-item px-1">
+                    <div class="nav-link text-white d-flex  align-items-center gap-2">
+                    <strong>EN</strong> 
+                    <span>|</span>
+                    <span class="text-white-50 custom-hover">DE</span>
+                    </div>
+                </li>
+    
+            </ul>
+        </div>
         </div>
     </nav>
 
-      <div class="pt-0 xl:pt-10">
-        <div class="min-h-[600px] sm:min-h-[700px] md:min-h-[500px] lg:min-h-[400px] bg-gradient-to-r from-[#614cfa] to-[#69fcc0]">
-            <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-16 mt-16 min-h-[600px] sm:min-h-[700px] md:min-h-[500px] lg:min-h-[400px]" style="background: 
-            url('./img/Banner/ninja credit coin png 2.png');
-            background-size: cover; background-position: center;">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
-                    <div class="md:col-span-1 lg:col-span-3">
-                        <h2 class="text-white font-bold pb-4">Manage Your Profile with Ease</h2>
-                        <hr class="border w-40">
+    <!-- Banner -->
+    <div class="pt-0 pt-xl-5">
+        <div class="" style="background: linear-gradient(to right, #614cfa, #69fcc0);">
+        <!-- Full width image background wrapper -->
+        <div class=" w-100 " style="background: url('./img/Banner/ninja credit coin png 2.png'); background-size: cover; background-position: center;">
+            <!-- Content container -->
+            <div class="container py-5 mt-5">
+                <div class="row align-items-center g-4 pt-5 pb-2">
+                    <div class="col-md-6 col-lg-7">
+                    <h2 class="text-white fw-semibold pb-3">Manage Your Profile with Ease</h2>
+                    <hr class="border border-2 border-light w-75 d-block d-md-none d-lg-none">
                     </div>
-                    <div class="md:col-span-1 lg:col-span-2">
-                        <div class="flex flex-wrap gap-3 justify-start md:justify-end">
-                            <button class="bg-[#624BFF] text-white flex gap-3 text-md items-center px-4 py-2 lg:px-4 lg:py-3 rounded-md shadow-lg">
-                                <img src="./img/download (3).png" alt=""> 500 Credits
-                                <img src="./img/download (2).png" alt=""> <img src="./img/Ellipse 476.png" alt=""> <img src="./img/download (1).png" alt="" class="w-6">Logout
-                            </button>
-                        </div>
+                    <div class="col-md-6 col-lg-5 text-md-end">
+                        <button class="btn  d-flex align-items-center gap-2 gap-md-3 gap-lg-3 px-4 py-2 rounded shadow" style="background-color: #624BFF; color: white;">
+                            <img src="./img/download (3).png" alt="">
+                            500 Credits
+                            <img src="./img/download (2).png" alt="">
+                            <img src="./img/Ellipse 476.png" alt="">
+                            <img src="./img/download (1).png" alt="" style="width: 24px;">
+                            Logout
+                        </button>                      
                     </div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 items-center">
-                    <div class="md:col-span-1 lg:col-span-4">
-                        <h1 class="py-4 font-bold text-white text-3xl lg:text-5xl xl:text-5xl">"Unleash the EcoWeb Ninja – <br>
-                            Power Up Your Website Journey!"</h1>
-                        <h2 class="font-bold text-white pr-0 xl:pr-60">After the download, the EcoWeb Ninja takes action – optimizing your website for a more accessible and sustainable future.</h2>
+                <hr class="border border-2 border-light w-25 d-none d-md-block d-lg-block">
+                <div class="row align-items-center g-4 mt-2">
+                    <div class="col-md-12 col-lg-10">
+                    <h1 class="py-3 fw-bold text-white display-5">"Unleash the EcoWeb Ninja – <br>
+                        Power Up Your Website Journey!"</h1>
+                    <h2 class="fw-semibold text-white pe-0 pe-xl-5">
+                        After the download, the EcoWeb Ninja takes action – optimizing your website for a more accessible and sustainable future.
+                    </h2>
                     </div>
-                    <div class="md:col-span-1 lg:col-span-1">
-                    </div>
+                    <div class="col-lg-2"></div>
                 </div>
             </div>
         </div>
-     </div>
+        </div>
+    </div>
 
     <!-- EcoWeb download  -->
     <div class="px-4 md:px-12 lg:px-12 xl:px-24 py-6">
@@ -310,5 +328,7 @@
 
          <!-- Main JavaScript -->
     <script src="./js/script.js"></script>
+        <!-- Bootstrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
