@@ -16,3 +16,13 @@
   .custom-hover:hover {
     color: #f8f9fa !important; /* Bootstrap's 'text-light' */
   }
+
+  .card-box {
+    flex: 1 1 calc(10% - 12px);
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    min-width: 180px;
+  }
+  
